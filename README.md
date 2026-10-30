@@ -10,19 +10,25 @@ It is inspired by some projects listed in [related projects](#related-projects).
 
 ## Installation
 
+### Quick Start (Pre-Built Release)
+A pre-built release package is included in this repository at [`releases/homebrewery-agentic-1.4.1.vsix`](./releases/homebrewery-agentic-1.4.1.vsix) and published on [GitHub Releases](https://github.com/Cinesist/homebrewery-agentic/releases).
+
 ### In Antigravity IDE
-1. Build or download the `homebrewery-agentic-*.vsix` package.
-2. In Antigravity IDE, open the Command Palette (`Ctrl+Shift+P`) and select **Extensions: Install from VSIX...**, or install directly via CLI:
+1. Grab the `.vsix` from [`releases/homebrewery-agentic-1.4.1.vsix`](./releases/homebrewery-agentic-1.4.1.vsix).
+2. In Antigravity IDE, open the Command Palette (`Ctrl+Shift+P`) and select **Extensions: Install from VSIX...**, or run from your terminal:
    ```cmd
-   "%LOCALAPPDATA%\Programs\Antigravity IDE\bin\antigravity-ide.cmd" --install-extension homebrewery-agentic-1.4.1.vsix --force
+   "%LOCALAPPDATA%\Programs\Antigravity IDE\bin\antigravity-ide.cmd" --install-extension releases\homebrewery-agentic-1.4.1.vsix --force
    ```
-3. Or from the extension source repository:
+3. Or build and install directly from the source repository:
    ```bash
    npm run install:antigravity
    ```
 
 ### In Visual Studio Code
-Search for `Homebrewery Agentic` in the VS Code Extensions Marketplace or install the `.vsix` file using `code --install-extension homebrewery-agentic-1.4.1.vsix`.
+Install the release package via CLI or the Extensions view:
+```bash
+code --install-extension releases/homebrewery-agentic-1.4.1.vsix
+```
 
 ## Features
 

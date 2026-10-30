@@ -1,9 +1,8 @@
-# Homebrewery for VS Code
+# Homebrewery Agentic for Antigravity IDE & VS Code
 
-Edit your favorite TTRPG content in your favorite editor.
+Edit your favorite TTRPG content and living grimoires directly in **Antigravity IDE** and **Visual Studio Code**.
 
-This VS Code extension provides an editor for your TTRPG content (aka **Brews**) using Markdown syntax supported by [The Homebrewery](https://homebrewery.naturalcrit.com/).
-It provides completion snippets and a built-in live preview.
+**Homebrewery Agentic** provides an agent-friendly, high-fidelity editor for your TTRPG content (aka **Brews**) using the Markdown syntax supported by [The Homebrewery](https://homebrewery.naturalcrit.com/). It provides completion snippets, D&D 5e / 5.5e formatting, a built-in live preview, and automated HTML/PDF generation.
 
 ![Homebrewery for Visual Code Demo](./media/images/homebrewery4vsc-demo.gif)
 
@@ -11,7 +10,19 @@ It is inspired by some projects listed in [related projects](#related-projects).
 
 ## Installation
 
-This extension requires [Visual Studio Code](https://code.visualstudio.com/download). Once VSCode is installed, search for the extension or install it from [the marketplace](https://marketplace.visualstudio.com/items?itemName=iffrit.homebrewery4vsc).
+### In Antigravity IDE
+1. Build or download the `homebrewery-agentic-*.vsix` package.
+2. In Antigravity IDE, open the Command Palette (`Ctrl+Shift+P`) and select **Extensions: Install from VSIX...**, or install directly via CLI:
+   ```cmd
+   "%LOCALAPPDATA%\Programs\Antigravity IDE\bin\antigravity-ide.cmd" --install-extension homebrewery-agentic-1.4.1.vsix --force
+   ```
+3. Or from the extension source repository:
+   ```bash
+   npm run install:antigravity
+   ```
+
+### In Visual Studio Code
+Search for `Homebrewery Agentic` in the VS Code Extensions Marketplace or install the `.vsix` file using `code --install-extension homebrewery-agentic-1.4.1.vsix`.
 
 ## Features
 

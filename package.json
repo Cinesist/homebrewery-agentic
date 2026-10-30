@@ -1,9 +1,9 @@
 {
-  "name": "homebrewery4vsc",
-  "displayName": "Homebrewery for VS Code",
-  "description": "Edit your favorite RPG content in your favorite editor",
+  "name": "homebrewery-agentic",
+  "displayName": "Homebrewery Agentic",
+  "description": "Edit your favorite RPG content in Antigravity IDE and VS Code",
   "version": "1.4.1",
-  "publisher": "iffrit",
+  "publisher": "cinesist",
   "author": {
     "name": "FX Nicolas",
     "url": "https://github.com/fxnicolas"
@@ -12,10 +12,10 @@
   "icon": "media/favicons/favicon_circled.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fxnicolas/homebrewery4vsc"
+    "url": "https://github.com/Cinesist/homebrewery-agentic.git"
   },
   "engines": {
-    "vscode": "^1.109.0"
+    "vscode": "^1.107.0"
   },
   "categories": [
     "Other",
@@ -523,6 +523,8 @@
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
+    "vsix": "vsce package --no-git-tag-version",
+    "install:antigravity": "npx @vscode/vsce package --no-git-tag-version && \"%LOCALAPPDATA%\\Programs\\Antigravity IDE\\bin\\antigravity-ide.cmd\" --install-extension homebrewery-agentic-1.4.1.vsix --force",
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
@@ -535,7 +537,7 @@
     "@types/lodash": "^4.17.24",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.19.17",
-    "@types/vscode": "^1.109.0",
+    "@types/vscode": "^1.107.0",
     "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2",
     "adm-zip": "^0.6.0",
